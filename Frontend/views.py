@@ -8,7 +8,7 @@ from Backend.models import Ticketdb, Gallerydb, Activitydb, Feedbackdb, FamilyTi
 
 def homepage(request):
     data = Ticketdb.objects.all()
-    return render(request,'Home.html',{'data':data})
+    return render(request,'index.html',{'data':data})
 
 def aboutus(request):
     return render(request,'About.html')

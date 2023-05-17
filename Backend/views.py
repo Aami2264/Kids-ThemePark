@@ -11,7 +11,7 @@ from Backend.models import  Ticketdb, Activitydb, Gallerydb, Feedbackdb, FamilyT
 
 def indexpage(request):
     ndata = Feedbackdb.objects.all()
-    return render(request,'index.html',{'ndata':ndata})
+    return render(request,'Home.html',{'ndata':ndata})
 
 def loginpage(request):
     return render(request,'login.html')
